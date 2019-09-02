@@ -4,6 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>button with modal effect using html css3</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
 </head>
 
 <body>
@@ -11,9 +19,43 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="modal-box">
-                    <button type="button" class="btn btn-primary btn-lg show-moda" data-toggle="modal" data-target="#mymodal">
-                            SUBSCRIB NOW
-                        </button>
+                    <button type="button" class="btn btn-primary btn-lg show-modal" data-toggle="modal" data-target="#mymodal">
+                        SUBSCRIBE NOW
+                    </button>
+
+                    <div class="modal fade" id="mymodal" tabindex="-1" role="dialog">
+
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                                <span aria-hidden="true">
+                                    X
+                                </span>
+                            </button>
+
+                            <div class="modal-body">
+                                <div class="icon">
+                                    <i class="fa fa-check-square"></i>
+                                </div>
+                                <h3 class="title">SUSCRIBE !</h3>
+                                <p class="description">
+                                    For all you Information Technology solution in bascket, Please subscribe to for more details.
+                                </p>
+                                <div class="form-group">
+                                    <input type="name" class="form-control" placeholder="name">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="enter email address">
+                                </div>
+
+                                <button class="subscribe">
+                                    Subscribe
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
